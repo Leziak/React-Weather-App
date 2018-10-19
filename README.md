@@ -805,7 +805,7 @@ Import Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your
 ```js
 import 'bootstrap/dist/css/bootstrap.css';
 // Put any other imports below so that CSS from your
-// components takes precedence over default styles.
+Components
 ```
 
 Import required reactstrap components within `src/App.js` file or your custom component files:
@@ -1487,7 +1487,7 @@ yarn add react-testing-library jest-dom
 Similar to `enzyme` you can create a `src/setupTests.js` file to avoid boilerplate in your test files:
 
 ```js
-// react-testing-library renders your components to document.body,
+Components
 // this will ensure they're removed after each test.
 import 'react-testing-library/cleanup-after-each';
 
