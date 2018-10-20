@@ -6,8 +6,7 @@ const hero = () => {
     return (
         <div>
             <WelcomeHeader>Inventi Weather App!</WelcomeHeader>
-            <WelcomeParagraph>Enter a city</WelcomeParagraph>
-            <WelcomeParagraph>...or look it up on the map.</WelcomeParagraph>
+            <WelcomeParagraph>Enter a city.</WelcomeParagraph>
         </div>
     )
 }
