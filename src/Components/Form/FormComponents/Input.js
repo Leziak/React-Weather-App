@@ -1,12 +1,4 @@
-import React from 'react';
 import styled from 'styled-components'
-
-const input = (props) => {
-    return (
-        <Input placeholder={props.placeholder} type="text"/>
-    )
-    
-};
 
 const Input = styled.input`
     font-size: 32px;
@@ -24,4 +16,4 @@ const Input = styled.input`
     }
 `;
 
-export default input;
+export default Input;

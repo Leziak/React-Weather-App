@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import Input from './FormComponents/Input.js';
 import Button from './FormComponents/Button.js';
+import Wrapper from './FormComponents/Wrapper.js';
 
 
 const form = (props) => {
@@ -19,11 +19,6 @@ const form = (props) => {
 };
 
 
-const Wrapper = styled.div`
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-`;
 
 
 export default form;

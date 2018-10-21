@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, {css} from 'styled-components';
 
 const Button = styled.button`
@@ -10,6 +9,11 @@ const Button = styled.button`
     font-size: 32px;
     padding: 10px 40px;
     outline: none;
+    
+    ${props => props.retry && css`
+        border-left: 3px solid black;
+        margin-top: 10px;
+    `}
 `;
 
 export default Button;
