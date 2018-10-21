@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     background: #f7f7f7;
     border: 2px solid black;
     border-radius: 4px;
+    margin: 10px;
     
     @media (max-width: 950px) {
         margin-bottom: 30px;
