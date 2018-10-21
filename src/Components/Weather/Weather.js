@@ -8,7 +8,7 @@ const weather = (props) => {
     return (
         <Wrapper>
             <Row>
-                <h1>{props.city[0].toUpperCase() + props.city.slice(1).toLowerCase()}, {props.country}</h1>
+                <h1>{props.city}, {props.country}</h1>
                 <div>
                     <p>{props.lat}</p>
                     <p>{props.lon}</p>

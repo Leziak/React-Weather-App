@@ -100,7 +100,8 @@ class App extends Component {
                 fahrenheit: Number((((data.main.temp - 273.15) * 1.8) + 32).toFixed(1)),
                 lat: data.coord.lat,
                 lon: data.coord.lon,
-                city: data.name.toLowerCase()
+                citySlug: data.name.toLowerCase(),
+		city: data.name
 
             }
         })
@@ -118,7 +119,8 @@ class App extends Component {
                 fahrenheit: data.current.temp_f,
                 lat: data.location.lat,
                 lon: data.location.lon,
-                city: data.location.name.toLowerCase()
+                citySlug: data.location.name.toLowerCase(),
+		city: data.location.name
             }
         })
     }
@@ -135,7 +137,8 @@ class App extends Component {
                 fahrenheit: Number((((data.temp) * 1.8) + 32).toFixed(1)),
                 lat: data.lat.toFixed(2),
                 lon: data.lon.toFixed(2),
-                city: data.city_name.toLowerCase()
+                citySlug: data.city_name.toLowerCase(),
+		city: data.city_name
             }
         })
     }
@@ -161,10 +164,10 @@ class App extends Component {
             ];
 
             display = weathers.map(weather => {
-                if (this.state.city.toLowerCase() == weather.city){
+                if (this.state.city.toLowerCase() === weather.citySlug){
                         return (
                             <Weather
-                                city={this.state.city}
+                                city={weather.city}
                                 name={weather.name}
                                 url={weather.url}
                                 overview={weather.overview}
