@@ -43,6 +43,8 @@ class App extends Component {
     }
 
     requestHandler() {
+        const city = this.state.city;
+
         if (this.state.allowRequest) {
             OpenWeatherMap.get(`weather?appid=886705b4c1182eb1c69f28eb8c520e20&q=${city}`)
                 .then(res => {
